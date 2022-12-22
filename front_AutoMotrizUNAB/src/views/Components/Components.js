@@ -1,11 +1,9 @@
 import React, { useContext, useState } from "react";
-import imageComponents from "./Gears.jpg";
 import "./Components.css";
 import Buttom from "../../components/forms/buttom";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/forms/Input";
 import ComptsContext from "../../contexts/ComptsContext";
-import UserContext from "../../contexts/UserContext";
 
 function Components() {
   /*const { setUser } = useContext(UserContext);

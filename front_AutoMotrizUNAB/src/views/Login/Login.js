@@ -11,7 +11,7 @@ function Login() {
     //Previene que se recarge la pag cuando se oprime el boton de log in
     evento.preventDefault();
 
-    const res = await fetch("http://localhost:8080/login", {
+    const res = await fetch("http://localhost:8080/login", { 
       method: "GET",
       mode: "cors",
       headers: {

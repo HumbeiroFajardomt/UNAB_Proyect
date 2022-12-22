@@ -22,9 +22,7 @@ function Nav() {
         <li>
           <Link to={"/components"}>Components</Link>
         </li>
-        <li>
-          <Link to={"/messages"}>Messages</Link>
-        </li>
+
         <li>
           <Link to={"/login"}>
             <Buttom style="wire">Log in</Buttom>
