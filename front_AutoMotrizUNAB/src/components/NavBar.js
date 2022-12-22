@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Buttom from "./forms/buttom";
 import Logo from "./forms/Logo";
 
-function Nav() {
+function NavBar() {
   return (
     <nav className="nav">
       <ul className="container flex">
@@ -16,15 +16,7 @@ function Nav() {
         <li>
           <Link to={"/"}>Home</Link>{" "}
         </li>
-        <li>
-          <Link to={"/clients"}>Clients</Link>
-        </li>
-        <li>
-          <Link to={"/components"}>Components</Link>
-        </li>
-        <li>
-          <Link to={"/messages"}>Messages</Link>
-        </li>
+
         <li>
           <Link to={"/login"}>
             <Buttom style="wire">Log in</Buttom>
@@ -32,7 +24,29 @@ function Nav() {
         </li>
       </ul>
     </nav>
+
+    /*
+    <nav className="nav">
+      <ul className="container flex">
+        <li>
+          <Link to={"/"}>
+            {" "}
+            <Logo></Logo>{" "}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/"}>Home</Link>{" "}
+        </li>
+
+        <li>
+          <Link to={"/login"}>
+            <Buttom style="wire">Log in</Buttom>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+    */
   );
 }
 
-export default Nav;
+export default NavBar;

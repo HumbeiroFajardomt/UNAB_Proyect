@@ -5,7 +5,7 @@ const ComptsContext = React.createContext();
 export function ComptsProvider(props) {
   const { children } = props;
 
-  const [compts, setCompts] = useState("2202");
+  const [compts, setCompts] = useState("");
 
   return (
     <ComptsContext.Provider value={{ compts, setCompts }}>

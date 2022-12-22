@@ -14,8 +14,25 @@ export async function createComponent(req, res) {
   res.status(201);
   res.json(document);
 }
-
+//////////////////////////////////////////////
 export async function readComponent(req, res) {
+  try {
+    const { id_component } = req.params;
+    const document = await componentModel.find({
+      $or: [
+        { id_component: id_component },
+        // { name: id_component },
+        // { description: id_component },
+        //{ brand: id_component },
+        //{ year: id_component },
+      ],
+    });
+    res.status(200).json(document);
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
+
+  /*
   const id_component = req.params.id_component;
 
   let document;
@@ -28,6 +45,7 @@ export async function readComponent(req, res) {
 
   res.status(201);
   res.json(document);
+  */
 }
 
 export async function updateComponent(req, res) {

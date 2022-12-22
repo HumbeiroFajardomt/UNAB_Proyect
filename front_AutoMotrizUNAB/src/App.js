@@ -22,6 +22,14 @@ function App() {
       <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/login"
+          element={
+            <UserLogProvider>
+              <Login></Login>
+            </UserLogProvider>
+          }
+        ></Route>
 
         <Route
           path="/clients"
@@ -39,14 +47,7 @@ function App() {
             </UserProvider>
           }
         ></Route>
-        <Route
-          path="/login"
-          element={
-            <UserLogProvider>
-              <Login></Login>
-            </UserLogProvider>
-          }
-        ></Route>
+
         <Route
           path="/user"
           element={
