@@ -1,0 +1,35 @@
+.title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.form {
+  max-width: 25rem;
+  margin: 1rem auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+.register {
+  max-width: 25rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.dataQueries {
+  text-align: left;
+  background-color: rgb(241, 253, 232);
+  padding: 1rem;
+  border-radius: var(--default-radius);
+  border: 2px black solid;
+  margin: 1rem;
+}
+
+.dataQueries .id_component {
+  font-weight: 600;
+  color: rgb(102, 93, 185);
+}
+
+.Description {
+  color: var(--enf-color);
+  font-weight: 700;
+  font-size: 18px;
+}

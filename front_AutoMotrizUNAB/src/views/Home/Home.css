@@ -1,0 +1,7 @@
+.complement img {
+  max-width: 100%;
+  opacity: 9%;
+  position: static;
+  display: inline-block;
+  text-align: center;
+}

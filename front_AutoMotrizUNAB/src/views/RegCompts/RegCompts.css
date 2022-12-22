@@ -1,0 +1,16 @@
+.title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.form {
+  max-width: 25rem;
+  margin: 1rem auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+.register {
+  max-width: 25rem;
+  margin: 0 auto;
+  justify-content: center;
+}
