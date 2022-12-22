@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import UserContext from "../contexts/UserContext";
 import Input from "../components/forms/Input";
 import Buttom from "../components/forms/buttom";
 
-import ClientsData from "./ClientsData";
 import { useNavigate } from "react-router-dom";
 
 function Clients() {

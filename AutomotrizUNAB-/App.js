@@ -6,6 +6,7 @@ import routerComponents from "./routes/componentRoutes.js";
 import routerLogin from "./routes/loginRouter.js";
 import routerMessage from "./routes/messageRoute.js";
 import cors from "cors";
+import routerUser from "./routes/userRoutes.js";
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use(
   })
 );
 app.use("/clients", routerClients);
+app.use("/user", routerUser);
 app.use("/components", routerComponents);
 app.use("/messages", routerMessage);
 app.use("/login", routerLogin);

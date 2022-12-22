@@ -13,6 +13,8 @@ import RegCompts from "./views/RegCompts/RegCompts";
 import QueryCompts from "./views/QueryCompts/QueryCompts";
 import { UserProvider } from "./contexts/UserContext";
 import { ComptsProvider } from "./contexts/ComptsContext";
+import { UserLogProvider } from "./contexts/UserLogContext";
+import UserView from "./views/userView";
 
 function App() {
   return (
@@ -40,11 +42,20 @@ function App() {
         <Route
           path="/login"
           element={
-            <UserProvider>
+            <UserLogProvider>
               <Login></Login>
-            </UserProvider>
+            </UserLogProvider>
           }
         ></Route>
+        <Route
+          path="/user"
+          element={
+            <UserLogProvider>
+              <UserView></UserView>
+            </UserLogProvider>
+          }
+        ></Route>
+
         <Route
           path="/components"
           element={

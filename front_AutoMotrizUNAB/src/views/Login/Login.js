@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Buttom from "../../components/forms/buttom";
 import Input from "../../components/forms/Input";
 import UserContext from "../../contexts/UserContext";
+import UserLogContext from "../../contexts/UserLogContext";
 import "./Login.css";
 
 function Login() {
@@ -34,15 +35,23 @@ function Login() {
 
   const [password, setPassword] = useState("");
 
-*/
-
   const { setUser } = useContext(UserContext);
   const [userID, setUserID] = useState("");
   const navigate = useNavigate();
   function onButtonClick(event) {
     event.preventDefault();
     setUser(userID);
-    navigate("/clients");
+    navigate("/user");
+  }
+*/
+
+  const { setUserLog } = useContext(UserLogContext);
+  const [userLogID, setUserLogID] = useState("");
+  const navigate = useNavigate();
+  function onButtonClick(event) {
+    event.preventDefault();
+    setUserLog(userLogID);
+    navigate("/user");
   }
 
   return (
@@ -51,8 +60,8 @@ function Login() {
         <h1>Welcome in AutoMotriz Platform</h1>
         <div className="login">
           <form className="flex form">
-            <Input onChange={(event) => setUserID(event.target.value)}>
-              User Name
+            <Input onChange={(event) => setUserLogID(event.target.value)}>
+              Company ID User
             </Input>
             <Input
               type="password"

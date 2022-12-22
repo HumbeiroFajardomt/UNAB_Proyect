@@ -22,6 +22,9 @@ function Nav() {
         <li>
           <Link to={"/components"}>Components</Link>
         </li>
+        <li>
+          <Link to={"/user"}>User</Link>
+        </li>
 
         <li>
           <Link to={"/login"}>
