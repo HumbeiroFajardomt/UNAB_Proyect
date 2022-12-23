@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
-import UserContext from "../contexts/UserContext";
-import Input from "../components/forms/Input";
-import Buttom from "../components/forms/buttom";
+import UserContext from "../../contexts/UserContext";
+import Input from "../../components/forms/Input";
+import Buttom from "../../components/forms/buttom";
 
 import { useNavigate } from "react-router-dom";
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
 
 function Clients() {
   const { setUser } = useContext(UserContext);

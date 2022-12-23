@@ -5,8 +5,8 @@ import "./assets/global.css";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./views/Home/Home";
-import Messages from "./views/Messages";
-import Clients from "./views/Clients";
+import Messages from "./views/Clients/Messages";
+import Clients from "./views/Clients/Clients";
 import Components from "./views/Components/Components";
 import Login from "./views/Login/Login";
 import RegCompts from "./views/RegCompts/RegCompts";
@@ -14,7 +14,7 @@ import QueryCompts from "./views/QueryCompts/QueryCompts";
 import { UserProvider } from "./contexts/UserContext";
 import { ComptsProvider } from "./contexts/ComptsContext";
 import { UserLogProvider } from "./contexts/UserLogContext";
-import UserView from "./views/userView";
+import UserView from "./views/Users/userView";
 import NavBar from "./components/NavBar";
 
 function App() {

@@ -48,10 +48,11 @@ function Login() {
   const { setUserLog } = useContext(UserLogContext);
   const [userLogID, setUserLogID] = useState("");
   const navigate = useNavigate();
+
   function onButtonClick(event) {
     event.preventDefault();
     setUserLog(userLogID);
-    navigate("/navBar");
+    navigate("/user");
   }
 
   return (
