@@ -4,6 +4,7 @@ import Input from "../components/forms/Input";
 import Buttom from "../components/forms/buttom";
 
 import { useNavigate } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 function Clients() {
   const { setUser } = useContext(UserContext);
@@ -19,7 +20,8 @@ function Clients() {
 
   //////////////////////////////////////////////////////////////////////////////////////
   return (
-    <div>
+    <div className="container">
+      <NavBar></NavBar>
       <form className="flex card form">
         <Input onChange={(event) => setUserID(event.target.value)}>
           Id Client

@@ -4,6 +4,7 @@ import "../../components/forms/Input";
 import QueryData from "./QueryData";
 import ComptsContext from "../../contexts/ComptsContext";
 import UserContext from "../../contexts/UserContext";
+import NavBar from "../../components/NavBar";
 
 function RegCompts() {
   const id_component = useContext(ComptsContext).compts;
@@ -22,13 +23,16 @@ function RegCompts() {
   }, []);
 
   return (
-    <section className="login">
-      <div>
-        {documents.map((document) => (
-          <QueryData data={document}></QueryData>
-        ))}
-      </div>
-    </section>
+    <div>
+      <NavBar></NavBar>
+      <section className="login">
+        <div>
+          {documents.map((document) => (
+            <QueryData data={document}></QueryData>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 

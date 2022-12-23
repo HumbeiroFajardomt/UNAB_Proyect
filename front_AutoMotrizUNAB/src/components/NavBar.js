@@ -2,24 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Buttom from "./forms/buttom";
 import Logo from "./forms/Logo";
+import "./Nav.css";
 
 function NavBar() {
   return (
     <nav className="nav">
       <ul className="container flex">
         <li>
-          <Link to={"/"}>
+          <Link to={"/navBar"}>
             {" "}
             <Logo></Logo>{" "}
           </Link>
         </li>
+
         <li>
-          <Link to={"/"}>Home</Link>{" "}
+          <Link to={"/clients"}>Clients</Link>
+        </li>
+        <li>
+          <Link to={"/components"}>Components</Link>
         </li>
 
         <li>
           <Link to={"/login"}>
-            <Buttom style="wire">Log in</Buttom>
+            <Buttom style="wire">Log 0ut</Buttom>
           </Link>
         </li>
       </ul>

@@ -51,7 +51,7 @@ function Login() {
   function onButtonClick(event) {
     event.preventDefault();
     setUserLog(userLogID);
-    navigate("/user");
+    navigate("/navBar");
   }
 
   return (

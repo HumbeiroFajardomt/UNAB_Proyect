@@ -15,13 +15,19 @@ import { UserProvider } from "./contexts/UserContext";
 import { ComptsProvider } from "./contexts/ComptsContext";
 import { UserLogProvider } from "./contexts/UserLogContext";
 import UserView from "./views/userView";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route element={<Nav />}>
+          <Route path="/" element={<Login></Login>}></Route>
+        </Route>
+
+        <Route path="/navBar" element={<NavBar></NavBar>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+
         <Route
           path="/login"
           element={

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./Mechanic.jpg";
+import logo1 from "./Mechanic1.jpg";
 
 import "../Nav.css";
 

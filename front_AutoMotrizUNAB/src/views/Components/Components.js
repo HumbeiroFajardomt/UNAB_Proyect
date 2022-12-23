@@ -4,6 +4,7 @@ import Buttom from "../../components/forms/buttom";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/forms/Input";
 import ComptsContext from "../../contexts/ComptsContext";
+import NavBar from "../../components/NavBar";
 
 function Components() {
   /*const { setUser } = useContext(UserContext);
@@ -25,6 +26,7 @@ function Components() {
   }
   return (
     <section className="container">
+      <NavBar></NavBar>
       <div className="card">
         <div>
           <h1>The Proper Maintenance for your equipment</h1>

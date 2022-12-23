@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Buttom from "../components/forms/buttom";
 import Input from "../components/forms/Input";
+import NavBar from "../components/NavBar";
 import UserContext from "../contexts/UserContext";
 import ClientsData from "./ClientsData";
 
@@ -21,13 +22,16 @@ function Messages() {
   }, []);
 
   return (
-    <section className="login">
-      <div>
-        {documents.map((document) => (
-          <ClientsData data={document}></ClientsData>
-        ))}
-      </div>
-    </section>
+    <div>
+      <NavBar></NavBar>
+      <section className="login">
+        <div>
+          {documents.map((document) => (
+            <ClientsData data={document}></ClientsData>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
 
